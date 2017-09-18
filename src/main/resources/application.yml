@@ -1,0 +1,10 @@
+spring: 
+  jackson:
+    serialization:
+      INDENT_OUTPUT:  true
+  datasource:
+     url: jdbc:mysql://127.0.0.1:3306/testdb3?characterEncoding=utf-8&amp;useUnicode=true
+     username: root
+     password: rootroot
+     driver-class-name: com.mysql.jdbc.Driver
+      

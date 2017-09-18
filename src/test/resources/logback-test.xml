@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false" scan="true">
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+    <contextName>logback</contextName>
+    <logger name="org.springframework.web" level="warn"/>
+    <logger name="org.springboot.sample" level="error" />
+    <logger name="com.laining.mybatis.demo" level="debug" />
+	
+    <appender name="stdout"
+              class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+      		<Pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</Pattern>
+    	</layout>
+    </appender>
+    
+    <root level="debug">
+    	<appender-ref ref="stdout" />
+  	</root>
+</configuration>
